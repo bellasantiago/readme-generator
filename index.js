@@ -33,7 +33,7 @@ const questions = [{
     {
         type: "input",
         name: "constributions",
-        message: "Who are the criterias for CONTRIBUTIONS to the project?"
+        message: "What are the criterias for CONTRIBUTIONS to the project?"
     },
     {
         type: "input",
