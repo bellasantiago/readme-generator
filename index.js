@@ -22,6 +22,11 @@ const questions = [{
     },
     {
         type: "input",
+        name: "usage",
+        message: "What is the USAGE information?"
+    },
+    {
+        type: "input",
         name: "contributors",
         message: "Who are the CONTRIBUTORS to the project?"
     },
@@ -41,6 +46,16 @@ const questions = [{
         name: "license",
         message: "Choose your LICENSE type?",
         choices: ["Apache", "BSD 3", "BSD 2", "GPL", "MIT", "Mozilla Public", "Common Dev and Distribution", "Eclipse", "None"],
+    },
+    {
+        type: "input",
+        name: "github",
+        message: "Please enter your GitHub USERNAME",
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "Please enter your contact EMAIL address",
     },
 
 ];
