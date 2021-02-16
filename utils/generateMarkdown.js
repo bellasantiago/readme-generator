@@ -15,7 +15,7 @@ function renderLicenseLink(license) {
     } else {
         // Else, if a license type is selected, then create a License line in the table of contents.
         return (
-            `- [License](#license)`
+            `- [License](#license🔐)`
         )
     }
 }
@@ -27,7 +27,7 @@ function renderLicenseSection(license) {
     } else {
         // Else, if a license type is selected, then create a License section.
         return (
-            `## License 🔐
+            `## License🔐
             This project is licensed under ${license}.`
         )
     }
@@ -40,25 +40,25 @@ function generateMarkdown(data) {
 
   ---
 
-  ## Description 📒
+  ## Description📒
   \`\`\`
   ${data.description}
   \`\`\`
 
   ---
 
-  ## Table Of Contents 🗄
-  - [Installation](#Installation) 
-  - [Usage](#Usage)
-  - [Contributors](#Contributors)
-  - [Future Contributions](#Future-Contributions)
-  - [Tests](#Tests)
-  - [Questions](#Questions)
+  ## Table Of Contents🗄
+  - [Installation](#Installation⬇️) 
+  - [Usage](#Usage📋)
+  - [Contributors](#Contributors🧑‍💻👩‍💻)
+  - [Future Contributions](#Future-Contributions💡)
+  - [Tests](#Tests🗂)
+  - [Questions](#Questions❔)
   ${renderLicenseLink(data.license)}
 
   ---
 
-  ## Installation ⬇️
+  ## Installation⬇️
   The user must first have the npm library installed by running the command:\n
   \`\`\`
   ${data.installation}
@@ -66,7 +66,7 @@ function generateMarkdown(data) {
 
   ---
 
-  ## Usage 📋
+  ## Usage📋
   To run the application, you'll need to run the command:\n
   \`\`\`
   ${data.usage}
@@ -74,19 +74,19 @@ function generateMarkdown(data) {
 
   ---
 
-  ## Contributors 🧑‍💻👩‍💻
+  ## Contributors🧑‍💻👩‍💻
   
   ${data.contributors}
   
   ---
 
-  ## Future Contributions 💡
+  ## Future Contributions💡
   
   ${data.constributions}
 
   ---
 
-  ## Tests 🗂
+  ## Tests🗂
   To run tests in this project, run the command:\n
   \`\`\`
   ${data.test}
@@ -94,7 +94,7 @@ function generateMarkdown(data) {
 
   ---
 
-  ## Questions ❔
+  ## Questions❔
 
   If you have any questions, please contact me at ${data.email}\n
   Have a look at my other projects at [github.com/${data.github}](https://github.com/${data.github})
